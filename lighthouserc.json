@@ -1,0 +1,19 @@
+{
+  "ci": {
+    "collect": {
+      "url": ["https://vink92.github.io/accessability/"],
+      "settings": {
+        "onlyCategories": ["accessibility"],
+        "emulatedFormFactor": "desktop"
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories.accessibility": ["error", { "minScore": 0.9 }]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
