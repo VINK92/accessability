@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <img src="./CANYON.png" alt="Canyon" class="header-logo" />
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="wrap-column wrap-centre">
+          <header>
+            <h1>Wellcome to CANYON</h1>
+          </header>
+          <img
+            src="./about-first.png"
+            alt="Portraite of owner"
+            class="intro-image"
+          />
+          <p class="intro-text">
+            Amber Interiors is a full-service residential design firm assisting
+            clients with a wide range of challenges including, selection of
+            architectural details and finishes, collaborating with architects
+            and builders, decorating a functional beautiful space with
+            furniture, fabrics, accessories, and creating custom pieces
+            tailor-made for your living space. Amber imbues a bit of California
+            eclectic in all of her projects, but craves a design challenge and
+            opportunities to show off her ever-evolving style. No matter what
+            the style she is asked to create, each space designed by Amber feels
+            cozy, eclectic, and unique.
+          </p>
+        </div>
+      </section>
+      <section class="findout-more wrap-centre">
+        <h2>Findout more</h2>
+        <p>Toread more about Canyon click on the link below</p>
+        <a class="text-anchor" href="" target="_blank" aria-label="">
+          Reade more (Open in a new window)
+        </a>
+      </section>
+      <section>
+        <div>
+          <h3>Contact me</h3>
+          <p>If you like to chat me directly please fill in the form</p>
+          <form action="">
+            <p>All fields marked with * required</p>
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-groupe">
+              <fieldset>
+                <legend>Nature of enquiry</legend>
+                <div class="form-group">
+                  <input type="checkbox" name="enquiry" id="his-films" />
+                  <label for="his-films">His films</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" name="enquiry" id="his-life" />
+                  <label for="his-life">His life</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" name="enquiry" id="other" />
+                  <label for="other">Other</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button type="submit" id="submit" aria-label="submit button">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <small>&copy; Copyright David Sealy 2025</small>
+      </div>
+    </footer>
+  </body>
+</html>

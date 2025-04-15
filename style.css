@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001 !important;
+    transition-duration: 0.001s !important;
+  }
+
+  form > button:hover {
+    transform: scale(1) !important;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Alata", sans-serif;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.wrap-colum {
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+.wrap-centre {
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.header-logo {
+  height: auto;
+  width: 100px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul > li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+nav > ul > li > a {
+  color: black;
+}
+
+nav > ul > li > a:hover {
+  color: #efb61e;
+  text-decoration: none;
+}
+section {
+  padding: 50px 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.intro {
+  background-color: black;
+  align-items: center;
+  color: #c6a15b;
+  display: flex;
+  flex-direction: column;
+}
+.intro-image {
+  height: auto;
+  width: 200px;
+}
+.intro-text {
+  margin-top: 25px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.findout-more {
+  background-color: #c6a15b;
+}
+
+.text-anchor {
+  color: #000;
+}
+
+.text-anchor:hover {
+  color: #000;
+  text-decoration: none;
+}
+form {
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  min-width: 500px;
+  padding: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 10px 15px;
+}
+form > button {
+  background-color: #000;
+  border: solid 1px #c6a15b;
+  border-radius: 5px;
+  color: #c6a15b;
+  cursor: pointer;
+  padding: 10px 20px;
+  outline-offset: 5px;
+  transition-property: background-color, border, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+form > button:hover {
+  background-color: #c6a15b;
+  color: #000;
+  border: solid 1px #000;
+  transform: scale(1.25);
+}
+footer {
+  background-color: #000;
+  color: #444;
+  /* #c6a15b; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
